@@ -1,0 +1,21 @@
+# Chatbot
+This is a chatbot which I created using python program
+import time 
+now = time.ctime()
+question = {
+       "hi": "Hello",
+       "how are you" : "I am fine. And you?",
+       "i am fine" : "Good",
+       "i am good. Thank you." : "Good",
+       "What is your name?" : "My name is Jarvis.",
+       "How old are you" : "I am 20 years old."
+       "What should I eat for dinner today?" : "Maybe something fulfiling and good",
+       "What is the time now?" : now,
+       }
+while True:
+   qs = input()
+   if (qs == "quit"):
+       break
+   else:
+       print(question[qs])
+   
